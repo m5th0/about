@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  border-bottom: 1px solid #333;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+.topnav a:hover {
+  background-color: #bad0de;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #849eb4;
+  color: white;
+}
+
+.topnav a.img {
+  float: left;
+  display: flex;
+  text-align: center;
+  padding: 2px 4px;
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav .noHover:hover {
+  background-color: #000000;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body style="background-color: #000000;" text="f2f2f2"> 
+
+<div class="topnav" id="myTopnav">
+	<a href="/" class="img noHover"><img src="https://raw.githubusercontent.com/m5th0/m5th0.github.io/935966451f840ba606a45edfc9a430c3e1aebf2a/text770.svg" style="width:100%; height:41px"> </a>
+  <a href="/about">About</a>
+  <a href="#Blogs">Blogs</a>
+  <a href="#Projects">Projects</a>
+  <a href="/" class="active">Home</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<div style="padding-left:16px">
+ <h1>Welcome to My About!</h1>
+    <p>This website is underconstruction</p>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
+
